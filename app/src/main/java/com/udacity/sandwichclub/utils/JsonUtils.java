@@ -21,7 +21,7 @@ public final class JsonUtils {
     private static final String IMAGE = "image";
     private static final String INGREDIENTS = "ingredients";
 
-    public static Sandwich parseSandwichJson(String json) {
+    public static final Sandwich parseSandwichJson(String json) {
         try {
             JSONObject jsonObject = new JSONObject(json);
             JSONObject name = jsonObject.getJSONObject(NAME);
